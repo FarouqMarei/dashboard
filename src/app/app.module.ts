@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { ErrorHandler, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { CoreModule } from './core/core.module';
 import { DashboardHttpInterceptor } from './dashboard-http-interceptor';
+import { GlobalErrorHandler } from './core/components/error-handler/global-error-handler';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,10 @@ import { DashboardHttpInterceptor } from './dashboard-http-interceptor';
     CoreModule,
   ],
   providers: [
+    {
+      provide: ErrorHandler,
+      useClass: GlobalErrorHandler,
+    },
     {
       provide: HTTP_INTERCEPTORS,
       useClass: DashboardHttpInterceptor,
