@@ -1,8 +1,0 @@
-:host{
-  display: contents;
-}
-
-.footer-body{
-  flex-shrink: 0;
-  border-top: solid 1px var(--text-color-200);
-}
