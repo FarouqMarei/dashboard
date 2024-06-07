@@ -1,0 +1,47 @@
+:root{
+  --primary: #5a91e2;
+  --secondary: #da7739;
+  --tertiary: #b64b34;
+
+  --background-color-100: #37393d;
+  --background-color-200: #323232;
+  --background-color-300: #292929;
+
+  --text-color-100: #ffffff;
+  --text-color-200: #b2bac9;
+  --text-color-300: #cccccb;
+  --text-color-400: #747980;
+  --success: #66c088;
+  --danger: #e76465;
+}
+
+
+.text-color-100{
+  color: var(--text-color-100);
+}
+.text-color-200{
+  color: var(--text-color-200);
+}
+.text-color-300{
+  color: var(--text-color-300);
+}
+
+.bg-primary{
+  background-color: var(--primary);
+}
+.bg-secondary{
+  background-color: var(--secondary);
+}
+.bg-tertiary{
+  background-color: var(--tertiary);
+}
+
+.bg-color-100{
+  background-color: var(--background-color-100);
+}
+.bg-color-200{
+  background-color: var(--background-color-200);
+}
+.bg-color-300{
+  background-color: var(--background-color-300);
+}

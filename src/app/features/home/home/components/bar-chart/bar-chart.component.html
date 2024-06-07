@@ -1,0 +1,45 @@
+
+<div class="d-flex alugn-items-center gap-3">
+  <span class="fs-5 text-color-100 mb-0">{{name}}</span>
+  <div class="flex-grow-1"></div>
+  <button class="btn p-0">
+    <img src="assets/imgs/icons/info.svg">
+  </button>
+</div>
+
+<div class="mt-1 d-flex gap-3">
+  <div class="flex-grow-1 d-flex flex-column gap-1 pt-2">
+    <p class="text-color-200 mb-0">Total Events</p>
+    <p class="fs-3 text-color-100 mb-0">0.7%</p>
+    <small class="d-flex gap-3 align-items-center">
+      <span>
+        <span class="text-color-200">Prev Yt. </span> <span class="text-color-100">4%</span>
+      </span>
+      <div class="chip danger p-1">
+        <img src="assets/imgs/icons/arrow_down.svg">
+        <span>28.5%</span>
+      </div>
+    </small>
+    <small class="d-flex gap-3 align-items-center">
+      <span>
+        <span class="text-color-200">Grp Avg </span> <span class="text-color-100">4%</span>
+      </span>
+      <div class="chip danger p-1">
+        <img src="assets/imgs/icons/arrow_down.svg">
+        <span>50%</span>
+      </div>
+    </small>
+  </div>
+  <div class="flex-shrink-0 pe-5 ps-3">
+      <apx-chart
+      [series]="chartOptions.series"
+      [chart]="chartOptions.chart"
+      [plotOptions]="chartOptions.plotOptions"
+      [responsive]="chartOptions.responsive"
+      [xaxis]="chartOptions.xaxis"
+      [legend]="chartOptions.legend"
+      [fill]="chartOptions.fill"
+      [tooltip]="chartOptions.tooltip"
+    ></apx-chart>
+  </div>
+</div>

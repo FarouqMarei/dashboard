@@ -1,0 +1,120 @@
+<div class="d-flex justify-content-end">
+  <span class="text-color-200 d-block">Last updated time 2:23 pm, Sunday</span>
+</div>
+
+<div class="d-flex align-items-start">
+  <div class="chip bg-color-100 p-3 d-flex align-items-start rounded-3 ">
+    <div class="d-flex gap-3">
+      <div class="d-flex align-items-center gap-2">
+        <div class="square bg-secondary"></div>
+        <span class="text-color-200">Alerts</span>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <div class="square bg-primary"></div>
+        <span class="text-color-200">Info</span>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <div class="square bg-tertiary"></div>
+        <span class="text-color-200">Alarm</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mt-1">
+  <div class="row">
+    <div class="col-lg-6 col-md-12 mt-2">
+      <div class="h-100 bg-color-100 rounded-4 p-3">
+
+        <div class="d-flex alugn-items-center gap-3">
+          <span class="fs-5 text-color-100 mb-0">Live events</span>
+          <button class="btn card-btn p-0 px-2">
+            <img src="assets/imgs/icons/arrow_top.svg">
+          </button>
+          <div class="flex-grow-1"></div>
+          <button class="btn p-0">
+            <img src="assets/imgs/icons/info.svg">
+          </button>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-12">
+            <div class="d-flex flex-row flex-lg-column justify-content-between align-self-start align-self-lg-end">
+
+              <div class="d-flex flex-column gap-2 mt-4">
+                <span class="alert-icon material-icons icon-info_outline text-warning"></span>
+                <!-- <img class="alert-icon" src="assets/imgs/icons/alert.svg"> -->
+                <span class="text-color-200">Total Alerts</span>
+                <div class="d-flex align-items-center justify-content-start">
+                  <span class="d-inline-block w-50 fs-3 text-color-100 me-3">487</span>
+                  <div class="chip success p-1">
+                    <img src="assets/imgs/icons/arrow_top.svg">
+                    <span>15.2%</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex flex-column gap-2 mt-4">
+                <img class="alert-icon" src="assets/imgs/icons/alert.svg">
+                <span class="text-color-200">Total Alarms</span>
+                <div class="d-flex align-items-center justify-content-start">
+                  <span class="d-inline-block w-50 fs-3 text-color-100 me-3">600</span>
+                  <div class="chip success p-1">
+                    <img src="assets/imgs/icons/arrow_top.svg">
+                    <span>15.2%</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex flex-column gap-2 mt-4">
+                <span class="text-color-200">Previous Year Total</span>
+                <div class="d-flex align-items-center justify-content-start">
+                  <span class="d-inline-block w-50 fs-3 text-color-100 me-3">1187</span>
+                  <div class="chip success p-1">
+                    <img src="assets/imgs/icons/arrow_top.svg">
+                    <span>15.2%</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-9 col-md-12">
+            <app-donut-chart></app-donut-chart>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6 col-md-12 mt-2">
+
+      <div class="row h-100">
+
+        <div class="col-md-6">
+          <div class="h-100 bg-color-100 rounded-4 p-3">
+            <app-bar-chart name="Site 1"></app-bar-chart>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-md-0 mt-4">
+          <div class="h-100 bg-color-100 rounded-4 p-3">
+            <app-bar-chart name="Site 2"></app-bar-chart>
+          </div>
+        </div>
+        <div class="col-md-6 mt-4">
+          <div class="h-100 bg-color-100 rounded-4 p-3">
+            <app-bar-chart name="Site 3"></app-bar-chart>
+          </div>
+        </div>
+        <div class="col-md-6 mt-4">
+          <div class="h-100 bg-color-100 rounded-4 p-3">
+            <app-bar-chart name="Site 4"></app-bar-chart>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>

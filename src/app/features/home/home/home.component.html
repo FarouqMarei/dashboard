@@ -1,0 +1,48 @@
+<div class="flex-grow-1 d-flex flex-column">
+  <h2 class="fs-2 text-color-100 mt-4 mb-4">Realtime Dashboard</h2>
+  <div class="row">
+
+    <div class="col-md-6 col-lg-4 mt-4">
+      <div class="h-100">
+        <app-realtime-stats></app-realtime-stats>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4 mt-4">
+      <div class="h-100 bg-color-200 rounded-4">
+        <app-live-events></app-live-events>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4 mt-4">
+      <div class="h-100 d-flex flex-column gap-3">
+        <div class="bg-color-200 rounded-4">
+          <app-device-status-distribution></app-device-status-distribution>
+        </div>
+        <div class="bg-color-200 rounded-4">
+          <app-weather-card></app-weather-card>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-12 col-lg-8 mt-4">
+      <div class="bg-color-200 rounded-4 h-100">
+        <app-live-workers-trend></app-live-workers-trend>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4 mt-4">
+      <div class="bg-color-200 rounded-4 h-100">
+        <app-people-hazardous></app-people-hazardous>
+      </div>
+    </div>
+
+    <div class="col-12 my-4">
+
+      <div class="bg-color-200 rounded-4 h-100 py-3 px-4">
+        <app-events></app-events>
+      </div>
+    </div>
+
+  </div>
+</div>

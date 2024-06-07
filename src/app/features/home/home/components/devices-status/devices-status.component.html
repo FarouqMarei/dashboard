@@ -1,0 +1,17 @@
+<div class="flex-display">
+  <p-card class="devices-status">
+    <h3>Devices Status</h3>
+    <div class="status">
+      <span class="status-type">Assigned</span>
+      <span class="status-count">{{ deviceStatus?.assigned }}</span>
+    </div>
+    <div class="status">
+      <span class="status-type">Idle</span>
+      <span class="status-count">{{ deviceStatus?.idle }}</span>
+    </div>
+    <div class="status">
+      <span class="status-type">Others</span>
+      <span class="status-count">{{ deviceStatus?.others }}</span>
+    </div>
+  </p-card>
+</div>

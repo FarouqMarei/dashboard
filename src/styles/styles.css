@@ -1,0 +1,19 @@
+@import './theme/_theme.css';
+@import './icons/material-icons/style.css';
+@import './components/buttons.css';
+@import './components/chips.css';
+@import './components/scroller.css';
+
+html, body{
+  font-size: 12px;
+  font-family: Roboto, sans-serif;
+  background-color: var(--background-color-300);
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: var(--text-color-100);
+}
+
+

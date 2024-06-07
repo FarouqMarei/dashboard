@@ -1,0 +1,9 @@
+::-webkit-scrollbar{
+  width: .7rem;
+  background-color: color-mix(in srgb, var(--secondary) 10%, transparent);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: var(--secondary);
+}

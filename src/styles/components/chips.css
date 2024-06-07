@@ -1,0 +1,19 @@
+.chip{
+  display: flex;
+  gap: .5rem;
+  border-radius: .2rem;
+}
+
+.chip.default{
+  color: var(--text-color-200);
+  background-color: color-mix(in srgb, var(--text-color-100) 10%, transparent);
+}
+
+.chip.success{
+  color: var(--success);
+  background-color: color-mix(in srgb, var(--success) 10%, transparent);
+}
+.chip.danger{
+  color: var(--danger);
+  background-color: color-mix(in srgb, var(--danger) 10%, transparent);
+}

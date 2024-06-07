@@ -1,0 +1,18 @@
+:host{
+  display: contents;
+}
+
+
+.circle{
+  overflow: auto;
+  width: 1.2rem;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  background-color: var(--primary);
+}
+.circle.success{
+  background-color: var(--success);
+}
+.circle.secondary{
+  background-color: var(--secondary);
+}

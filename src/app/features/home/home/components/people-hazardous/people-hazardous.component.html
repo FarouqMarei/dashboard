@@ -1,0 +1,30 @@
+
+<div class="p-3">
+  <div class="d-flex alugn-items-center gap-3">
+    <span class="fs-4 text-color-100 mb-0">People Hazardous Zone / Critical Mission</span>
+    <div class="flex-grow-1"></div>
+    <button class="btn p-0">
+      <img src="assets/imgs/icons/info.svg">
+    </button>
+  </div>
+
+  <span class="text-color-200 mt-3 d-block">Updated since last 5 minutes</span>
+
+  <div class="mt-2 p-3 user-list d-flex flex-column">
+    <div class="user-list-item" *ngFor="let user of users; last as isLast">
+      <div class="user-list-item-avatar">
+        <img src="assets/imgs/users/{{user.image}}.png">
+        <div class="user-list-item-line" *ngIf="!isLast"></div>
+      </div>
+      <div class="user-list-item-body">
+        <p class="fs-5 text-color-100 fw-bold mb-2">{{user.name}}</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="text-color-200">{{user.position}}</span>
+
+          <div class="chip default py-1 px-2 rounded-3">{{user.time}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

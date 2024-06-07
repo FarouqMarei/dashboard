@@ -1,0 +1,18 @@
+:host{
+  display: contents;
+}
+
+.square{
+  width: 1rem;
+  border-radius: .3rem;
+  aspect-ratio: 1;
+}
+
+.alert-icon{
+  font-size: 3rem;
+}
+
+img.alert-icon{
+  width: 3rem;
+}
+

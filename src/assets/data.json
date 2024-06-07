@@ -1,0 +1,110 @@
+{
+    "activePeople": 1148,
+    "activeDevices": 924,
+    "liveEvents:Details": {
+      "activePeople": 1148,
+      "activeDevices": 924,
+      "liveEvents": {
+        "info": 13,
+        "alerts": 5,
+        "alarms": 3,
+        "sosRaised": "12:23:43 PM"
+      },
+      "liveEventsDetails": [
+        {
+          "icon": "info",
+          "info": "Info event 1",
+          "time": "12:23 PM",
+          "tooltip": "Additional info about event 1"
+        },
+        {
+          "icon": "warning",
+          "info": "Alert event 1",
+          "time": "1:45 PM",
+          "tooltip": "Additional info about event 2"
+        },
+        {
+          "icon": "error",
+          "info": "Alarm event 1",
+          "time": "2:30 PM",
+          "tooltip": "Additional info about event 3"
+        }
+      ],
+      "devicesStatus": {
+        "assigned": 724,
+        "inUse": 120,
+        "others": 80
+      },
+      "weather": {
+        "location": "Amman, Jordan",
+        "temperature": 32,
+        "forecast": [
+          {"time": "2 PM", "temperature": 30},
+          {"time": "3 PM", "temperature": 28}
+        ]
+      },
+      "liveWorkersTrend": [
+        {"time": "6:00 AM", "greenZone": 10, "amberZone": 5, "redZone": 2},
+        {"time": "7:00 AM", "greenZone": 15, "amberZone": 10, "redZone": 4},
+        {"time": "8:00 AM", "greenZone": 20, "amberZone": 15, "redZone": 5}
+      ],
+      "hazardousZone": [
+        {"name": "Mohammad Yousef Ali", "role": "HSE Manager", "time": "01:14"},
+        {"name": "Saleem Mohammad Sami", "role": "Safety Supervisor", "time": "01:20"},
+        {"name": "Sami Hamad Ali", "role": "Operator", "time": "05:45"},
+        {"name": "Osama Omar Ibrahem", "role": "Maintenance Engineer", "time": "02:36"}
+      ],
+      "eventsSummary": {
+        "totalEvents": 1111,
+        "alerts": 487,
+        "alarms": 600,
+        "siteStats": [
+          {"site": 1, "totalEvents": 13, "prevWeek": "0.7%", "grpAvg": "1.4%"},
+          {"site": 2, "totalEvents": 6, "prevWeek": "6%", "grpAvg": "2%"},
+          {"site": 3, "totalEvents": 16, "prevWeek": "6.4%", "grpAvg": "5.6%"},
+          {"site": 4, "totalEvents": 22, "prevWeek": "22.3%", "grpAvg": "10%"}
+        ]
+      }
+    },
+    "liveEvents": {
+      "info": 13,
+      "alerts": 5,
+      "alarms": 3,
+      "sosRaised": "12:23:43 PM"
+    },
+    "devicesStatus": {
+      "assigned": 724,
+      "inUse": 120,
+      "others": 80
+    },
+    "weather": {
+      "location": "Amman, Jordan",
+      "temperature": 32,
+      "forecast": [
+        {"time": "2 PM", "temperature": 30},
+        {"time": "3 PM", "temperature": 28}
+      ]
+    },
+    "liveWorkersTrend": [
+      {"time": "6:00 AM", "greenZone": 10, "amberZone": 5, "redZone": 2},
+      {"time": "7:00 AM", "greenZone": 15, "amberZone": 10, "redZone": 4},
+      {"time": "8:00 AM", "greenZone": 20, "amberZone": 15, "redZone": 5}
+    ],
+    "hazardousZone": [
+      {"name": "Mohammad Yousef Ali", "role": "HSE Manager", "time": "01:14"},
+      {"name": "Saleem Mohammad Sami", "role": "Safety Supervisor", "time": "01:20"},
+      {"name": "Sami Hamad Ali", "role": "Operator", "time": "05:45"},
+      {"name": "Osama Omar Ibrahem", "role": "Maintenance Engineer", "time": "02:36"}
+    ],
+    "eventsSummary": {
+      "totalEvents": 1111,
+      "alerts": 487,
+      "alarms": 600,
+      "siteStats": [
+        {"site": 1, "totalEvents": 13, "prevWeek": "0.7%", "grpAvg": "1.4%"},
+        {"site": 2, "totalEvents": 6, "prevWeek": "6%", "grpAvg": "2%"},
+        {"site": 3, "totalEvents": 16, "prevWeek": "6.4%", "grpAvg": "5.6%"},
+        {"site": 4, "totalEvents": 22, "prevWeek": "22.3%", "grpAvg": "10%"}
+      ]
+    }
+  }
