@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from 'src/app/core/services/data.service';
+import { DataService } from 'src/app/core/services/data-services/data.service';
 
 @Component({
   selector: 'app-realtime-stats',

@@ -1,0 +1,1 @@
+// handle assets and paths

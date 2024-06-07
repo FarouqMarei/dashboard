@@ -1,5 +1,4 @@
 import { NgModule } from "@angular/core";
-import { DataService } from "src/app/core/services/data.service";
 import { ChartModule } from 'primeng/chart';
 import { CardModule } from 'primeng/card';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -21,6 +20,7 @@ import { RealtimeStatsComponent } from "./components/realtime-stats/realtime-sta
 import { WeatherCardComponent } from "./components/weather-card/weather-card.component";
 import { HomeComponent } from "./home.component";
 import { EventsComponent } from "./components/events/events.component";
+import { DataService } from "src/app/core/services/data-services/data.service";
 
 @NgModule({
     imports: [

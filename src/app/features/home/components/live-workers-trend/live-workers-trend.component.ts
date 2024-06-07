@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ChartOptions, ChartType } from 'chart.js';
-import { DataService } from 'src/app/core/services/data.service';
+import { DataService } from 'src/app/core/services/data-services/data.service';
 
 @Component({
   selector: 'app-live-workers-trend',
