@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RealtimeComponent } from './realtime/realtime.component';
+import { RealtimeRoutingModule } from './realtime-routing.module';
 
 
 
@@ -9,6 +10,7 @@ import { RealtimeComponent } from './realtime/realtime.component';
     RealtimeComponent
   ],
   imports: [
+    RealtimeRoutingModule,
     CommonModule
   ]
 })

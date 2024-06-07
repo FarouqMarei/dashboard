@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { EventsComponent } from './events/events.component';
+import { EventsPageComponent } from './events/events-page.component';
+import { EventsRoutingModule } from './events-routing.module';
 
 
 
 @NgModule({
   declarations: [
-    EventsComponent
+    EventsPageComponent
   ],
   imports: [
+    EventsRoutingModule,
     CommonModule
   ]
 })

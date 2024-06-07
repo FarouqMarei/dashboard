@@ -1,8 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './features/home/home/home.component';
-import { RealtimeComponent } from './features/realtime/realtime/realtime.component';
-import { EventsComponent } from './features/events/events/events.component';
 import { DevicesComponent } from './features/devices/devices/devices.component';
 import { DomainComponent } from './features/domain/domain/domain.component';
 import { SettingsComponent } from './features/settings/settings/settings.component';
@@ -11,9 +8,16 @@ import { NotFoundComponent } from './core/components/not-found/not-found.compone
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
-  { path: 'realtime', component: RealtimeComponent, canActivate: [authGuard] },
-  { path: 'events', component: EventsComponent },
+  { path: 'home',
+    loadChildren: () => import('./features/home/home.module').then(m => m.HomeModule)
+   },
+  { path: 'realtime', 
+    loadChildren: () => import('./features/realtime/realtime.module').then(m => m.RealtimeModule),
+    canActivate: [authGuard] },
+  { path: 'events', 
+    loadChildren: () => import('./features/events/events.module').then(m => m.EventsModule)
+   },
+   // TODO, lazy loading
   { path: 'devices', component: DevicesComponent },
   { path: 'domain', component: DomainComponent },
   { path: 'settings', component: SettingsComponent },

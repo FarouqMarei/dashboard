@@ -7,7 +7,6 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { CoreModule } from './core/core.module';
-import { HomeModule } from './features/home/home.module';
 import { DashboardHttpInterceptor } from './dashboard-http-interceptor';
 
 @NgModule({
@@ -22,7 +21,6 @@ import { DashboardHttpInterceptor } from './dashboard-http-interceptor';
     FormsModule,
     HttpClientModule,
     CoreModule,
-    HomeModule
   ],
   providers: [
     {
