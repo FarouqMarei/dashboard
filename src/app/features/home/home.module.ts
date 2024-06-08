@@ -7,7 +7,6 @@ import { CommonModule } from "@angular/common";
 import { HomeRoutingModule } from "./home-routing.module";
 import { BarChartComponent } from "./components/charts/bar-chart/bar-chart.component";
 import { DeviceStatusDistributionComponent } from "./components/device-status-distribution/device-status-distribution.component";
-import { DevicesStatusComponent } from "./components/devices-status/devices-status.component";
 import { DonutChartComponent } from "./components/charts/donut-chart/donut-chart.component";
 import { EventsSummaryComponent } from "./components/events-summary/events-summary.component";
 import { HazardousZoneComponent } from "./components/hazardous-zone/hazardous-zone.component";
@@ -34,7 +33,6 @@ import { DataService } from "src/app/core/services/data-services/data.service";
     declarations: [
         RealtimeStatsComponent,
         LiveEventsComponent,
-        DevicesStatusComponent,
         LiveWorkersTrendComponent,
         HazardousZoneComponent,
         EventsSummaryComponent,
