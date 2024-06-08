@@ -67,9 +67,11 @@
       }
     },
     "liveEvents": {
-      "info": 13,
-      "alerts": 5,
-      "alarms": 3,
+      "events": [
+        {"title": "Info", "count": 13},
+        {"title": "Alerts", "count": 5},
+        {"title": "Alarms", "count": 2}
+      ],
       "sosRaised": "12:23:43 PM"
     },
     "devicesStatus": {

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LiveEvents } from 'src/app/core/models/live-events';
 import { DataService } from 'src/app/core/services/data-services/data.service';
 
 @Component({
@@ -7,13 +8,11 @@ import { DataService } from 'src/app/core/services/data-services/data.service';
   styleUrls: ['./live-events.component.css']
 })
 export class LiveEventsComponent implements OnInit {
-  liveEvents: any;
+  liveEvents: LiveEvents[] = [];
 
   constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
-    this.dataService.getData().subscribe(data => {
-      this.liveEvents = data.liveEvents;
-    });
+    this.liveEvents = this.dataService.getJsonData().liveEvents?.events;
   }
 }

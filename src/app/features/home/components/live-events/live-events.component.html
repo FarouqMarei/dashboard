@@ -14,43 +14,17 @@
     <span class="text-color-200 mt-3 d-block">Current statistics for the events</span>
 
     <div class="row mt-2">
-      <div class="col-sm-6 col-lg-4 mt-3">
+      <div class="col-sm-6 col-lg-4 mt-3" *ngFor="let item of liveEvents">
         <div class="d-flex align-items-center flex-column gap-2">
-          <div class="circle"></div>
+          <div class="circle" [ngClass]="item.title == 'Alerts' ? 'circle-secondary' : item.title == 'Alarms' ? 'circle-tertiary' : ''"></div>
           <div class="d-flex gap-3 align-items-center">
-            <span class="fs-3 text-color-100">13</span>
+            <span class="fs-3 text-color-100">{{item.count}}</span>
             <div class="chip success p-1">
               <img src="assets/imgs/icons/arrow_top.svg">
               <span>15.2%</span>
             </div>
           </div>
-          <p class="text-color-200 align-self-start ms-4">Total Info</p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-lg-4 mt-3">
-        <div class="d-flex align-items-center flex-column gap-2">
-          <div class="circle circle-secondary"></div>
-          <div class="d-flex gap-3  align-items-center">
-            <span class="fs-3 text-color-100">5</span>
-            <div class="chip success p-1">
-              <img src="assets/imgs/icons/arrow_top.svg">
-              <span>15.2%</span>
-            </div>
-          </div>
-          <p class="text-color-200 align-self-start ms-4">Total Alerts</p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-lg-4 mt-3">
-        <div class="d-flex align-items-center flex-column gap-2">
-          <div class="circle circle-tertiary"></div>
-          <div class="d-flex gap-3  align-items-center">
-            <span class="fs-3 text-color-100">1</span>
-            <div class="chip success p-1">
-              <img src="assets/imgs/icons/arrow_top.svg">
-              <span>15.2%</span>
-            </div>
-          </div>
-          <p class="text-color-200 align-self-start ms-4">Total Alarms</p>
+          <p class="text-color-200 align-self-start ms-4">{{item.title}}</p>
         </div>
       </div>
     </div>
